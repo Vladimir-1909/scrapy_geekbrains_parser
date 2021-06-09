@@ -6,7 +6,10 @@
 import scrapy
 
 
-class GeekbrainsParserItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class BrainItem(scrapy.Item):
+    url = scrapy.Field()
+    title = scrapy.Field()
+    subtitle = scrapy.Field()
+    description = scrapy.Field()
+    logo = scrapy.Field()
+    teachers = scrapy.Field()
