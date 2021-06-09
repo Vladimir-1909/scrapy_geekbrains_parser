@@ -4,6 +4,7 @@
 # https://docs.scrapy.org/en/latest/topics/items.html
 
 import scrapy
+from scrapy.loader import ItemLoader
 
 
 class BrainItem(scrapy.Item):
@@ -13,3 +14,7 @@ class BrainItem(scrapy.Item):
     description = scrapy.Field()
     logo = scrapy.Field()
     teachers = scrapy.Field()
+
+
+class BrainsItemLoader(ItemLoader):
+    pass
